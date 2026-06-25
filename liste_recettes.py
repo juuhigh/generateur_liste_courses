@@ -51,7 +51,11 @@ for articles, [quantite, unite] in sorted(liste_courses.items()):
         quantite_jaune = quantite
         liste_courses.pop(articles, None)
 
-liste_courses["oeufs"] = [liste_courses["oeufs"][0] + max(quantite_blanc, quantite_jaune), ""]
+if "oeufs" in liste_courses:
+    liste_courses["oeufs"] = [liste_courses["oeufs"][0] + max(quantite_blanc, quantite_jaune), ""]
+else:
+    if quantite_blanc > 0 or quantite_jaune > 0:
+        liste_courses["oeufs"] = [max(quantite_blanc, quantite_jaune), ""]
 
 for articles, [quantite, unite] in sorted(liste_courses.items()):
     st.write(f"- {articles}: {quantite} {unite}")
