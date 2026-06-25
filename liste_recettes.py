@@ -43,6 +43,9 @@ for recette, portion in recettes_choisies.items():
 
 st.header("Liste des courses")
 
+quantite_blanc = 0
+quantite_jaune = 0
+
 for articles, [quantite, unite] in sorted(liste_courses.items()):
     if articles == "oeufs, blanc":
         quantite_blanc = quantite
