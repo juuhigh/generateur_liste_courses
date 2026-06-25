@@ -44,4 +44,14 @@ for recette, portion in recettes_choisies.items():
 st.header("Liste des courses")
 
 for articles, [quantite, unite] in sorted(liste_courses.items()):
+    if articles == "oeufs, blanc":
+        quantite_blanc = quantite
+        liste_courses.pop(articles, None)
+    if articles == "oeufs, jaune":
+        quantite_jaune = quantite
+        liste_courses.pop(articles, None)
+
+liste_courses["oeufs"] = [liste_courses["oeufs"][0] + max(quantite_blanc, quantite_jaune), ""]
+
+for articles, [quantite, unite] in sorted(liste_courses.items()):
     st.write(f"- {articles}: {quantite} {unite}")
