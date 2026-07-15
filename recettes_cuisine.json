@@ -4,12 +4,22 @@
     "ingredients": [
       { "nom": "farine t65", "quantite": "500", "unite": "g" },
       { "nom": "patates douces", "quantite": "150", "unite": "g" },
-      { "nom": "levure boulangere", "quantite": "15", "unite": "g" },
+      { "nom": "levure boulangère", "quantite": "15", "unite": "g" },
       { "nom": "beurre", "quantite": "60", "unite": "g" },
-      { "nom": "gousses d ail", "quantite": "3", "unite": "" },
+      { "nom": "gousses d'ail", "quantite": "3", "unite": "" },
       { "nom": "eau", "quantite": "25", "unite": "cL" },
       { "nom": "sel", "quantite": "7", "unite": "g" },
-      { "nom": "persil", "quantite": "1", "unite": "" }
+      { "nom": "persil frais", "quantite": "1", "unite": "" }
+    ]
+  },
+  "brandade de morue": {
+    "nb_portions": 4,
+    "ingredients": [
+      { "nom": "farine t65", "quantite": "500", "unite": "g" },
+      { "nom": "pommes de terre", "quantite": "15", "unite": "" },
+      { "nom": "lait", "quantite": "50", "unite": "cL" },
+      { "nom": "morue", "quantite": "400", "unite": "g" },
+      { "nom": "huile de tournesol", "quantite": "2", "unite": "cas" }
     ]
   },
   "lasagnes": {
@@ -17,11 +27,11 @@
     "ingredients": [
       { "nom": "farine t65", "quantite": "500", "unite": "g" },
       { "nom": "oeufs", "quantite": "4", "unite": "" },
-      { "nom": "viande hachee", "quantite": "500", "unite": "g" },
+      { "nom": "viande hachée", "quantite": "500", "unite": "g" },
       { "nom": "coulis de tomates", "quantite": "400", "unite": "g" },
       { "nom": "champignons de paris", "quantite": "250", "unite": "g" },
-      { "nom": "grana padano rape", "quantite": "100", "unite": "g" },
-      { "nom": "epinards", "quantite": "250", "unite": "g" },
+      { "nom": "grana padano rapé", "quantite": "100", "unite": "g" },
+      { "nom": "épinards", "quantite": "250", "unite": "g" },
       { "nom": "lait", "quantite": "100", "unite": "cL" },
       { "nom": "farine t55", "quantite": "80", "unite": "g" },
       { "nom": "beurre", "quantite": "80", "unite": "g" }
@@ -33,10 +43,10 @@
       { "nom": "vermicelles de riz", "quantite": "500", "unite": "g" },
       { "nom": "champignons de paris", "quantite": "400", "unite": "g" },
       { "nom": "blanc de poulet", "quantite": "250", "unite": "g" },
-      { "nom": "gousses d ail", "quantite": "2", "unite": "" },
+      { "nom": "gousses d'ail", "quantite": "2", "unite": "" },
       { "nom": "gingembre frais", "quantite": "2", "unite": "cm" },
       {
-        "nom": "cube magique bouillon legumes",
+        "nom": "cube magique bouillon légumes",
         "quantite": "0.5",
         "unite": ""
       },
@@ -51,19 +61,19 @@
     "ingredients": [
       { "nom": "linguine", "quantite": "500", "unite": "g" },
       { "nom": "lardons", "quantite": "200", "unite": "g" },
-      { "nom": "grana padano rape", "quantite": "100", "unite": "g" },
+      { "nom": "grana padano rapé", "quantite": "100", "unite": "g" },
       { "nom": "oeufs, jaune", "quantite": "3", "unite": "" },
       { "nom": "huile d'olive", "quantite": "3", "unite": "cas" },
-      { "nom": "basilic", "quantite": "1", "unite": "" }
+      { "nom": "basilic frais", "quantite": "1", "unite": "" }
     ]
   },
   "quiche lorraine": {
     "nb_portions": 4,
     "ingredients": [
-      { "nom": "pate brisee", "quantite": "1", "unite": "" },
+      { "nom": "pate brisée", "quantite": "1", "unite": "" },
       { "nom": "lardons", "quantite": "200", "unite": "g" },
       { "nom": "oeufs", "quantite": "3", "unite": "" },
-      { "nom": "creme fraiche", "quantite": "20", "unite": "cL" },
+      { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
       { "nom": "lait", "quantite": "25", "unite": "cL" },
       { "nom": "sel", "quantite": "1", "unite": "g" },
       { "nom": "poivre", "quantite": "1", "unite": "g" }
@@ -74,15 +84,15 @@
     "ingredients": [
       { "nom": "huile de coco", "quantite": "2", "unite": "cas" },
       { "nom": "oignons", "quantite": "2", "unite": "" },
-      { "nom": "gousses d ail", "quantite": "4", "unite": "" },
+      { "nom": "gousses d'ail", "quantite": "4", "unite": "" },
       { "nom": "gingembre frais", "quantite": "2", "unite": "cm" },
       { "nom": "poudre de poivron doux", "quantite": "1", "unite": "cac" },
       { "nom": "garam masala", "quantite": "1", "unite": "cac" },
       { "nom": "cumin", "quantite": "1", "unite": "cac" },
       { "nom": "lentilles corail", "quantite": "300", "unite": "g" },
-      { "nom": "cube magique bouillon legumes", "quantite": "1", "unite": "" },
+      { "nom": "cube magique bouillon légumes", "quantite": "1", "unite": "" },
       { "nom": "lait de coco", "quantite": "40", "unite": "cL" },
-      { "nom": "tomates concassees", "quantite": "400", "unite": "g" },
+      { "nom": "tomates concassées", "quantite": "400", "unite": "g" },
       { "nom": "cassonade", "quantite": "2", "unite": "cas" },
       { "nom": "citron vert", "quantite": "0.5", "unite": "" },
       { "nom": "coriandre fraiche", "quantite": "1", "unite": "" },
@@ -92,7 +102,7 @@
   "salade cesar": {
     "nb_portions": 4,
     "ingredients": [
-      { "nom": "poulet", "quantite": "200", "unite": "g" },
+      { "nom": "blanc de poulet", "quantite": "200", "unite": "g" },
       { "nom": "oeufs", "quantite": "4", "unite": "" },
       { "nom": "sel", "quantite": "1", "unite": "g" }
     ]
@@ -100,12 +110,12 @@
   "tarte chevre tomate": {
     "nb_portions": 4,
     "ingredients": [
-      { "nom": "pate feuilletee", "quantite": "1", "unite": "" },
-      { "nom": "buche de chevre", "quantite": "1", "unite": "" },
+      { "nom": "pate feuilletée", "quantite": "1", "unite": "" },
+      { "nom": "buche de chèvre", "quantite": "1", "unite": "" },
       { "nom": "oeufs", "quantite": "3", "unite": "" },
-      { "nom": "creme fraiche", "quantite": "20", "unite": "cL" },
+      { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
       { "nom": "tomates", "quantite": "3", "unite": "" },
-      { "nom": "moutarde a l'ancienne", "quantite": "3", "unite": "cas" },
+      { "nom": "moutarde à l'ancienne", "quantite": "3", "unite": "cas" },
       { "nom": "semoule", "quantite": "10", "unite": "g" },
       { "nom": "sel", "quantite": "1", "unite": "g" }
     ]
@@ -113,10 +123,10 @@
   "tarte thon courgette": {
     "nb_portions": 4,
     "ingredients": [
-      { "nom": "pate feuilletee", "quantite": "1", "unite": "" },
+      { "nom": "pate feuilletée", "quantite": "1", "unite": "" },
       { "nom": "courgettes", "quantite": "2", "unite": "" },
       { "nom": "oeufs", "quantite": "3", "unite": "" },
-      { "nom": "creme fraiche", "quantite": "20", "unite": "cL" },
+      { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
       { "nom": "mozzarella", "quantite": "1", "unite": "" },
       { "nom": "thon", "quantite": "1", "unite": "boite" },
       { "nom": "curry", "quantite": "2", "unite": "cas" },
@@ -127,7 +137,7 @@
     "nb_portions": 16,
     "ingredients": [
       { "nom": "chocolat noir", "quantite": "75", "unite": "g" },
-      { "nom": "pepites de chocolat noir", "quantite": "50", "unite": "g" },
+      { "nom": "pépites de chocolat noir", "quantite": "50", "unite": "g" },
       { "nom": "farine t55", "quantite": "150", "unite": "g" },
       { "nom": "cassonade", "quantite": "180", "unite": "g" },
       { "nom": "beurre", "quantite": "150", "unite": "g" },
@@ -142,7 +152,7 @@
     "ingredients": [
       { "nom": "farine t55", "quantite": "500", "unite": "g" },
       { "nom": "lait", "quantite": "100", "unite": "cL" },
-      { "nom": "sucre vanille", "quantite": "1", "unite": "sachet" },
+      { "nom": "sucre vanillé", "quantite": "1", "unite": "sachet" },
       { "nom": "huile de tournesol", "quantite": "2", "unite": "cas" },
       { "nom": "oeufs", "quantite": "6", "unite": "" },
       { "nom": "sel", "quantite": "1", "unite": "g" }
@@ -171,7 +181,7 @@
   "tarte au citron meringuee": {
     "nb_portions": 8,
     "ingredients": [
-      { "nom": "pate sablee", "quantite": "1", "unite": "" },
+      { "nom": "pate sablée", "quantite": "1", "unite": "" },
       { "nom": "citrons", "quantite": "4", "unite": "" },
       { "nom": "sucre", "quantite": "150", "unite": "g" },
       { "nom": "sucre glace", "quantite": "120", "unite": "g" },
