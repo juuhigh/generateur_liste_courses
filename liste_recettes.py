@@ -1,5 +1,18 @@
 import json
+import subprocess
 import streamlit as st
+
+
+def build_liste_courses_text(liste_courses, famille_ingredients):
+    lignes = []
+    for famille, ingredients in famille_ingredients.items():
+        lignes.append(f"{famille.replace('_', ' ').capitalize()}:")
+        for articles, [quantite, unite] in sorted(liste_courses.items()):
+            if articles in ingredients:
+                lignes.append(f"- {articles}: {quantite} {unite}")
+        lignes.append("")
+    return "\n".join(lignes).strip()
+
 
 with open("recettes_cuisine.json", "r", encoding="utf-8") as f:
     dict_recettes = json.load(f)
@@ -13,12 +26,12 @@ recette_selectionnees = st.multiselect(
 
 desired_portions = {}
 
-famille_ingredients = {"fruits_légumes": ["basilic frais", "persil frais", "pruneaux", "carottes", "champignons de paris", "courgettes", "épinards", "tomates", "citron vert", "citrons", "oignons", "gousses d'ail", "gingembre frais", "coriandre fraiche", "noix", "patates douces", "pommes de terre", "poivrons"],
-                       "épicerie_salée": ["riz", "vermicelles de riz", "coulis de tomates", "lentilles corail", "tomates concassées", "huile d'olive", "huile de coco", "huile de tournesol", "moutarde à l'ancienne", "cube magique bouillon légumes", "lait de coco", "semoule", "linguine", "sauce nuoc nam"],
-                       "épicerie_sucrée": ["pépites de chocolat noir", "chocolat noir", "cassonade", "sucre", "sucre glace", "farine t55", "farine t65", "lait", "levure boulangère", "levure chimique", "sucre vanillé"],
-                       "produits_frais": ["beurre", "buche de chèvre", "crême fraiche", "grana padano rapé", "mozzarella", "pate feuilletée", "pate brisée", "pate sablée"],
-                       "viandes_poissons": ["blanc de poulet", "lardons", "morue", "thon", "oeufs", "viande hachée"],
-                       "épices": ["chili", "cumin", "curry", "garam masala", "poivre", "poudre de poivron doux", "sel"]}
+famille_ingredients = {"fruits_et_légumes": ['ananas', 'aubergine', 'basilic frais', 'carottes', 'cernaux de noix', 'champignons de paris', 'citron', 'citron vert', 'concombres', 'coriandre fraiche', 'courgette', 'gingembre frais', "gousses d'ail", 'noix', 'oignons jaune', 'oignons rouge', 'patates douces', 'persil frais', 'poireaux', 'poivron rouge', 'pommes de terre', 'pruneaux', 'salade laitue', 'salade roquette', 'tomates allongées', 'tomates cerise', 'tomates rondes', 'épinards'],
+                       "épicerie_salée": ['coulis de tomate', 'croutons', 'cube magique bouillon légumes', 'farine t00', "filets d'anchois", "huile d'olive", 'huile de coco', 'huile de tournesol', 'jus de citron', 'lait de coco', 'lentilles corail', 'moutarde', "moutarde à l'ancienne", 'pâtes farfalle', 'pâtes linguine', 'riz', 'sauce nuoc nam', 'semola di granna duro', 'semoule', 'tomates concassées', 'tomates séchées', 'vermicelles de riz', 'vinaigre de xérès'],
+                       "épicerie_sucrée": ['cassonade', 'chocolat noir', 'farine t55', 'farine t65', 'lait', 'levure boulangère', 'levure chimique', 'miel liquide', 'pain de mie', 'pépites de chocolat noir', 'sucre', 'sucre glace', 'sucre vanillé'],
+                       "produits_frais": ['beurre', 'buche de chèvre', 'burrata', 'crême fraiche', 'fromage de chêvre à tartiner', 'grana padano râpé', 'jampon cru', 'mini mozzarella', 'mozzarella', 'parmesan copeaux', 'parmesan râpé', 'pate brisée', 'pate feuilletée', 'pate sablée'],
+                       "viandes_poissons": ['blanc de poulet', 'lardons', 'morue', 'oeuf', 'thon', 'viande hachée'],
+                       "épices": ['chili', 'cumin', 'curry', 'garam masala', 'poivre', 'poudre de poivron doux', 'sel']}
 
 for recette in recette_selectionnees:
     base = dict_recettes[recette]["nb_portions"]
@@ -68,9 +81,6 @@ else:
     if quantite_blanc > 0 or quantite_jaune > 0:
         liste_courses["oeufs"] = [max(quantite_blanc, quantite_jaune), ""]
 
-for famille, ingredients in famille_ingredients.items():
-    st.write(f"\n{famille.replace('_', ' ').capitalize()}:")
-    for articles, [quantite, unite] in sorted(liste_courses.items()):
-        if articles in ingredients:
-            st.write(f"- {articles}: {quantite} {unite}")
+texte_liste_courses = build_liste_courses_text(liste_courses, famille_ingredients)
+st.text_area("Liste de courses", value=texte_liste_courses, height="content")
 
