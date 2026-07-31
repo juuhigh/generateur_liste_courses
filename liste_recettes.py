@@ -16,6 +16,14 @@ def build_liste_courses_text(liste_courses, famille_ingredients):
     liste_finale = lignes
     return "\n".join(liste_finale).strip()
 
+
+def get_recette_data(recette_name):
+    for value in dict_recettes.values():
+        if isinstance(value, dict) and recette_name in value:
+            return value[recette_name]
+    raise KeyError(f"Recette introuvable: {recette_name}")
+
+
 # FILE_ID = "1m6tYhr7uXdt_-eowYhjBJlEz8f1rTnx2"
 # URL = f"https://drive.google.com/uc?export=download&id={FILE_ID}"
 # https://drive.google.com/file/d/1m6tYhr7uXdt_-eowYhjBJlEz8f1rTnx2/view?usp=drive_link
@@ -36,24 +44,26 @@ def build_liste_courses_text(liste_courses, famille_ingredients):
 with open("recettes_cuisine.json", "r", encoding="utf-8") as f:
     dict_recettes = json.load(f)
 
-st.title("Generateur de listes de courses")
+famille_ingredients = dict_recettes["famille_ingrédients"]
 
-recette_selectionnees = st.multiselect(
-    "Choisis tes recettes",
-    options=list(dict_recettes.keys())
+st.title("Générateur de listes de courses")
+
+recette_salees_selectionnees = st.multiselect(
+    "Choisis tes recettes salées",
+    options=sorted(list(dict_recettes["recettes_salées"].keys()))
 )
 
+recette_sucrees_selectionnees = st.multiselect(
+    "Choisis tes recettes sucrées",
+    options=sorted(list(dict_recettes["recettes_sucrées"].keys()))
+)
+
+recette_selectionnees = recette_salees_selectionnees + recette_sucrees_selectionnees
 desired_portions = {}
 
-famille_ingredients = {"fruits_et_légumes": ['ananas', 'aubergine', 'basilic frais', 'carottes', 'cernaux de noix', 'champignons de paris', 'citron', 'citron vert', 'concombres', 'coriandre fraiche', 'courgette', 'gingembre frais', "gousses d'ail", 'noix', 'oignons jaune', 'oignons rouge', 'patates douces', 'persil frais', 'poireaux', 'poivron rouge', 'pommes de terre', 'pruneaux', 'salade laitue', 'salade roquette', 'tomates allongées', 'tomates cerise', 'tomates rondes', 'épinards'],
-                       "épicerie_salée": ['coulis de tomate', 'croutons', 'cube magique bouillon légumes', 'farine t00', "filets d'anchois", "huile d'olive", 'huile de coco', 'huile de tournesol', 'jus de citron', 'lait de coco', 'lentilles corail', 'moutarde', "moutarde à l'ancienne", 'pâtes farfalle', 'pâtes linguine', 'riz', 'sauce nuoc nam', 'semola di granna duro', 'semoule', 'tomates concassées', 'tomates séchées', 'vermicelles de riz', 'vinaigre de xérès'],
-                       "épicerie_sucrée": ['cassonade', 'chocolat noir', 'farine t55', 'farine t65', 'lait', 'levure boulangère', 'levure chimique', 'miel liquide', 'pain de mie', 'pépites de chocolat noir', 'sucre', 'sucre glace', 'sucre vanillé'],
-                       "produits_frais": ['beurre', 'buche de chèvre', 'burrata', 'crême fraiche', 'fromage de chêvre à tartiner', 'fromage râpé', 'grana padano râpé', 'jampon cru', 'mini mozzarella', 'mozzarella', 'parmesan copeaux', 'parmesan râpé', 'pate brisée', 'pate feuilletée', 'pate sablée'],
-                       "viandes_poissons": ['blanc de poulet', 'lardons', 'morue', 'oeuf', 'thon', 'viande hachée'],
-                       "épices": ['chili', 'cumin', 'curry', 'garam masala', 'poivre', 'poudre de poivron doux', 'sel']}
-
 for recette in recette_selectionnees:
-    base = dict_recettes[recette]["nb_portions"]
+    recette_data = get_recette_data(recette)
+    base = recette_data["nb_portions"]
 
     desired_portions[recette] = st.number_input(
         f"{recette} - portions",
@@ -68,18 +78,20 @@ recettes_choisies = {recette: desired_portions[recette] for recette in recette_s
 liste_courses = {}
 
 for recette, portion in recettes_choisies.items():
-    for dict_ingredient in dict_recettes[recette]["ingredients"]:
+    recette_data = get_recette_data(recette)
+    for dict_ingredient in recette_data["ingredients"]:
         ingredient = dict_ingredient["nom"]
         quantite = dict_ingredient["quantite"]
         unite = dict_ingredient["unite"]
+        scaled_quantite = float(quantite) * portion / recette_data["nb_portions"]
 
-        if ingredient in liste_courses.keys():
-            liste_courses[ingredient][0] += float(quantite) * portion / dict_recettes[recette]["nb_portions"]
+        if ingredient in liste_courses:
+            liste_courses[ingredient][0] += scaled_quantite
             if liste_courses[ingredient][1] != unite:
                 print(f"Unité différente pour {ingredient}: {liste_courses[ingredient][1]} vs {unite}")
                 break
         else:
-            liste_courses[ingredient] = [float(quantite) * portion / dict_recettes[recette]["nb_portions"], unite]
+            liste_courses[ingredient] = [scaled_quantite, unite]
 
 st.header("Liste des courses")
 

@@ -1,282 +1,400 @@
 {
-  "bolo do caco": {
-    "nb_portions": 4,
-    "ingredients": [
-      { "nom": "farine t65", "quantite": "500", "unite": "g" },
-      { "nom": "patates douces", "quantite": "150", "unite": "g" },
-      { "nom": "levure boulangère", "quantite": "15", "unite": "g" },
-      { "nom": "beurre", "quantite": "60", "unite": "g" },
-      { "nom": "gousses d'ail", "quantite": "3", "unite": "" },
-      { "nom": "eau", "quantite": "25", "unite": "cL" },
-      { "nom": "sel", "quantite": "7", "unite": "g" },
-      { "nom": "persil frais", "quantite": "1", "unite": "" }
+  "famille_ingrédients": {
+    "fruits_et_légumes": [
+      "ananas",
+      "aubergine",
+      "basilic frais",
+      "carottes",
+      "cernaux de noix",
+      "champignons de paris",
+      "citron",
+      "citron vert",
+      "concombres",
+      "coriandre fraiche",
+      "courgette",
+      "gingembre frais",
+      "gousses d'ail",
+      "noix",
+      "oignons jaune",
+      "oignons rouge",
+      "patates douces",
+      "persil frais",
+      "poireaux",
+      "poivron rouge",
+      "pommes de terre",
+      "pruneaux",
+      "salade laitue",
+      "salade roquette",
+      "tomates allongées",
+      "tomates cerise",
+      "tomates rondes",
+      "épinards"
+    ],
+    "épicerie_salée": [
+      "coulis de tomate",
+      "croutons",
+      "cube magique bouillon légumes",
+      "farine t00",
+      "filets d'anchois",
+      "huile d'olive",
+      "huile de coco",
+      "huile de tournesol",
+      "jus de citron",
+      "lait de coco",
+      "lentilles corail",
+      "moutarde",
+      "moutarde à l'ancienne",
+      "pâtes farfalle",
+      "pâtes linguine",
+      "riz",
+      "sauce nuoc nam",
+      "semola di granna duro",
+      "semoule",
+      "tomates concassées",
+      "tomates séchées",
+      "vermicelles de riz",
+      "vinaigre de xérès"
+    ],
+    "épicerie_sucrée": [
+      "cassonade",
+      "chocolat noir",
+      "farine t55",
+      "farine t65",
+      "lait",
+      "levure boulangère",
+      "levure chimique",
+      "miel liquide",
+      "pain de mie",
+      "pépites de chocolat noir",
+      "sucre",
+      "sucre glace",
+      "sucre vanillé"
+    ],
+    "produits_frais": [
+      "beurre",
+      "buche de chèvre",
+      "burrata",
+      "crême fraiche",
+      "fromage de chêvre à tartiner",
+      "fromage râpé",
+      "grana padano râpé",
+      "jampon cru",
+      "mini mozzarella",
+      "mozzarella",
+      "parmesan copeaux",
+      "parmesan râpé",
+      "pate brisée",
+      "pate feuilletée",
+      "pate sablée"
+    ],
+    "viandes_poissons": [
+      "blanc de poulet",
+      "lardons",
+      "morue",
+      "oeuf",
+      "thon",
+      "viande hachée"
+    ],
+    "épices": [
+      "chili",
+      "cumin",
+      "curry",
+      "garam masala",
+      "poivre",
+      "poudre de poivron doux",
+      "sel"
     ]
   },
-  "brandade de morue": {
-    "nb_portions": 4,
-    "ingredients": [
-      { "nom": "farine t65", "quantite": "500", "unite": "g" },
-      { "nom": "pommes de terre", "quantite": "15", "unite": "" },
-      { "nom": "lait", "quantite": "50", "unite": "cL" },
-      { "nom": "morue", "quantite": "400", "unite": "g" },
-      { "nom": "huile de tournesol", "quantite": "2", "unite": "cas" }
-    ]
+  "recettes_salées": {
+    "bolo do caco": {
+      "nb_portions": 4,
+      "ingredients": [
+        { "nom": "farine t65", "quantite": "500", "unite": "g" },
+        { "nom": "patates douces", "quantite": "150", "unite": "g" },
+        { "nom": "levure boulangère", "quantite": "15", "unite": "g" },
+        { "nom": "beurre", "quantite": "60", "unite": "g" },
+        { "nom": "gousses d'ail", "quantite": "3", "unite": "" },
+        { "nom": "eau", "quantite": "25", "unite": "cL" },
+        { "nom": "sel", "quantite": "7", "unite": "g" },
+        { "nom": "persil frais", "quantite": "1", "unite": "" }
+      ]
+    },
+    "brandade de morue": {
+      "nb_portions": 4,
+      "ingredients": [
+        { "nom": "farine t65", "quantite": "500", "unite": "g" },
+        { "nom": "pommes de terre", "quantite": "15", "unite": "" },
+        { "nom": "lait", "quantite": "50", "unite": "cL" },
+        { "nom": "morue", "quantite": "400", "unite": "g" },
+        { "nom": "huile de tournesol", "quantite": "2", "unite": "cas" }
+      ]
+    },
+    "lasagnes": {
+      "nb_portions": 8,
+      "ingredients": [
+        { "nom": "farine t65", "quantite": "500", "unite": "g" },
+        { "nom": "oeuf", "quantite": "4", "unite": "" },
+        { "nom": "viande hachée", "quantite": "500", "unite": "g" },
+        { "nom": "coulis de tomate", "quantite": "400", "unite": "g" },
+        { "nom": "champignons de paris", "quantite": "250", "unite": "g" },
+        { "nom": "grana padano râpé", "quantite": "100", "unite": "g" },
+        { "nom": "épinards", "quantite": "250", "unite": "g" },
+        { "nom": "lait", "quantite": "100", "unite": "cL" },
+        { "nom": "farine t55", "quantite": "80", "unite": "g" },
+        { "nom": "beurre", "quantite": "80", "unite": "g" }
+      ]
+    },
+    "pates thai ananas": {
+      "nb_portions": 4,
+      "ingredients": [
+        { "nom": "ananas", "quantite": "0.5", "unite": "" },
+        { "nom": "vermicelles de riz", "quantite": "500", "unite": "g" },
+        { "nom": "champignons de paris", "quantite": "400", "unite": "g" },
+        { "nom": "blanc de poulet", "quantite": "250", "unite": "g" },
+        { "nom": "gousses d'ail", "quantite": "2", "unite": "" },
+        { "nom": "gingembre frais", "quantite": "2", "unite": "cm" },
+        {
+          "nom": "cube magique bouillon légumes",
+          "quantite": "0.5",
+          "unite": ""
+        },
+        { "nom": "lait de coco", "quantite": "40", "unite": "cL" },
+        { "nom": "cassonade", "quantite": "2", "unite": "cas" },
+        { "nom": "sauce nuoc nam", "quantite": "2", "unite": "cac" },
+        { "nom": "chili", "quantite": "1", "unite": "cac" }
+      ]
+    },
+    "pates carbonara": {
+      "nb_portions": 3,
+      "ingredients": [
+        { "nom": "pâtes linguine", "quantite": "500", "unite": "g" },
+        { "nom": "lardons", "quantite": "200", "unite": "g" },
+        { "nom": "grana padano râpé", "quantite": "100", "unite": "g" },
+        { "nom": "oeuf, jaune", "quantite": "3", "unite": "" },
+        { "nom": "huile d'olive", "quantite": "3", "unite": "cas" },
+        { "nom": "basilic frais", "quantite": "1", "unite": "" }
+      ]
+    },
+    "quiche lorraine": {
+      "nb_portions": 1,
+      "ingredients": [
+        { "nom": "pate brisée", "quantite": "1", "unite": "" },
+        { "nom": "lardons", "quantite": "200", "unite": "g" },
+        { "nom": "oeuf", "quantite": "3", "unite": "" },
+        { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
+        { "nom": "fromage râpé", "quantite": "70", "unite": "g" },
+        { "nom": "lait", "quantite": "25", "unite": "cL" },
+        { "nom": "sel", "quantite": "1", "unite": "g" },
+        { "nom": "poivre", "quantite": "1", "unite": "g" }
+      ]
+    },
+    "red lentil dahl": {
+      "nb_portions": 4,
+      "ingredients": [
+        { "nom": "huile de coco", "quantite": "2", "unite": "cas" },
+        { "nom": "oignons jaune", "quantite": "2", "unite": "" },
+        { "nom": "gousses d'ail", "quantite": "4", "unite": "" },
+        { "nom": "gingembre frais", "quantite": "2", "unite": "cm" },
+        { "nom": "poudre de poivron doux", "quantite": "1", "unite": "cac" },
+        { "nom": "garam masala", "quantite": "1", "unite": "cac" },
+        { "nom": "cumin", "quantite": "1", "unite": "cac" },
+        { "nom": "lentilles corail", "quantite": "300", "unite": "g" },
+        {
+          "nom": "cube magique bouillon légumes",
+          "quantite": "1",
+          "unite": ""
+        },
+        { "nom": "lait de coco", "quantite": "40", "unite": "cL" },
+        { "nom": "tomates concassées", "quantite": "400", "unite": "g" },
+        { "nom": "cassonade", "quantite": "2", "unite": "cas" },
+        { "nom": "citron vert", "quantite": "0.5", "unite": "" },
+        { "nom": "coriandre fraiche", "quantite": "1", "unite": "" },
+        { "nom": "riz", "quantite": "10", "unite": "g" }
+      ]
+    },
+    "gaspacho": {
+      "nb_portions": 4,
+      "ingredients": [
+        { "nom": "tomates allongées", "quantite": "1000", "unite": "g" },
+        { "nom": "concombres", "quantite": "0.5", "unite": "" },
+        { "nom": "oeuf", "quantite": "1", "unite": "" },
+        { "nom": "poivron rouge", "quantite": "1", "unite": "" },
+        { "nom": "oignons rouge", "quantite": "0.5", "unite": "" },
+        { "nom": "pain de mie", "quantite": "1", "unite": "" },
+        { "nom": "gousses d'ail", "quantite": "2", "unite": "" },
+        { "nom": "vinaigre de xérès", "quantite": "3", "unite": "cas" },
+        { "nom": "huile d'olive", "quantite": "2", "unite": "cas" }
+      ]
+    },
+    "salade cesar": {
+      "nb_portions": 2,
+      "ingredients": [
+        { "nom": "blanc de poulet", "quantite": "200", "unite": "g" },
+        { "nom": "lardons", "quantite": "200", "unite": "g" },
+        { "nom": "oeuf, jaune", "quantite": "1", "unite": "" },
+        { "nom": "salade laitue", "quantite": "1", "unite": "" },
+        { "nom": "filets d'anchois", "quantite": "5", "unite": "" },
+        { "nom": "tomates cerise", "quantite": "10", "unite": "" },
+        { "nom": "gousses d'ail", "quantite": "1", "unite": "" },
+        { "nom": "moutarde", "quantite": "1", "unite": "cac" },
+        { "nom": "jus de citron", "quantite": "2", "unite": "cas" },
+        { "nom": "huile d'olive", "quantite": "2", "unite": "cas" },
+        { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
+        { "nom": "croutons", "quantite": "1", "unite": "" },
+        { "nom": "parmesan copeaux", "quantite": "1", "unite": "" }
+      ]
+    },
+    "tarte chèvre tomate": {
+      "nb_portions": 1,
+      "ingredients": [
+        { "nom": "pate feuilletée", "quantite": "1", "unite": "" },
+        { "nom": "buche de chèvre", "quantite": "1", "unite": "" },
+        { "nom": "oeuf", "quantite": "3", "unite": "" },
+        { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
+        { "nom": "tomates rondes", "quantite": "3", "unite": "" },
+        { "nom": "moutarde à l'ancienne", "quantite": "3", "unite": "cas" },
+        { "nom": "semoule", "quantite": "10", "unite": "g" },
+        { "nom": "sel", "quantite": "1", "unite": "g" }
+      ]
+    },
+    "tarte poireaux lardons curry": {
+      "nb_portions": 1,
+      "ingredients": [
+        { "nom": "pate brisée", "quantite": "1", "unite": "" },
+        { "nom": "poireaux", "quantite": "2", "unite": "" },
+        { "nom": "oeuf", "quantite": "3", "unite": "" },
+        { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
+        { "nom": "lardons", "quantite": "100", "unite": "g" },
+        { "nom": "curry", "quantite": "2", "unite": "cac" },
+        { "nom": "sel", "quantite": "1", "unite": "g" }
+      ]
+    },
+    "tarte thon courgette": {
+      "nb_portions": 1,
+      "ingredients": [
+        { "nom": "pate feuilletée", "quantite": "1", "unite": "" },
+        { "nom": "courgette", "quantite": "2", "unite": "" },
+        { "nom": "oeuf", "quantite": "3", "unite": "" },
+        { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
+        { "nom": "mozzarella", "quantite": "1", "unite": "" },
+        { "nom": "thon", "quantite": "1", "unite": "boite" },
+        { "nom": "curry", "quantite": "2", "unite": "cas" },
+        { "nom": "sel", "quantite": "1", "unite": "g" }
+      ]
+    },
+    "pâte à pizza": {
+      "nb_portions": 4,
+      "ingredients": [
+        { "nom": "farine t00", "quantite": "450", "unite": "g" },
+        { "nom": "huile d'olive", "quantite": "3", "unite": "cas" },
+        { "nom": "sucre", "quantite": "20", "unite": "g" },
+        { "nom": "sel", "quantite": "1", "unite": "g" },
+        { "nom": "semola di granna duro", "quantite": "50", "unite": "g" }
+      ]
+    },
+    "pizza burratina": {
+      "nb_portions": 1,
+      "ingredients": [
+        { "nom": "coulis de tomate", "quantite": "100", "unite": "g" },
+        { "nom": "burrata", "quantite": "1", "unite": "" },
+        { "nom": "tomates cerise", "quantite": "10", "unite": "" },
+        { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
+        { "nom": "jampon cru", "quantite": "50", "unite": "g" }
+      ]
+    },
+    "pizza chêvre miel noix": {
+      "nb_portions": 1,
+      "ingredients": [
+        {
+          "nom": "fromage de chêvre à tartiner",
+          "quantite": "75",
+          "unite": "g"
+        },
+        { "nom": "miel liquide", "quantite": "2", "unite": "cas" },
+        { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
+        { "nom": "cernaux de noix", "quantite": "50", "unite": "g" }
+      ]
+    },
+    "pizza parmigianna": {
+      "nb_portions": 1,
+      "ingredients": [
+        { "nom": "coulis de tomate", "quantite": "100", "unite": "g" },
+        { "nom": "aubergine", "quantite": "0.5", "unite": "" },
+        { "nom": "huile d'olive", "quantite": "2", "unite": "cas" },
+        { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
+        { "nom": "parmesan copeaux", "quantite": "30", "unite": "g" }
+      ]
+    },
+    "salade italienne": {
+      "nb_portions": 8,
+      "ingredients": [
+        { "nom": "pâtes farfalle", "quantite": "500", "unite": "g" },
+        { "nom": "tomates séchées", "quantite": "300", "unite": "g" },
+        { "nom": "mini mozzarella", "quantite": "200", "unite": "g" },
+        { "nom": "tomates cerise", "quantite": "20", "unite": "" },
+        { "nom": "parmesan copeaux", "quantite": "1", "unite": "" },
+        { "nom": "salade roquette", "quantite": "200", "unite": "g" }
+      ]
+    }
   },
-  "lasagnes": {
-    "nb_portions": 8,
-    "ingredients": [
-      { "nom": "farine t65", "quantite": "500", "unite": "g" },
-      { "nom": "oeuf", "quantite": "4", "unite": "" },
-      { "nom": "viande hachée", "quantite": "500", "unite": "g" },
-      { "nom": "coulis de tomate", "quantite": "400", "unite": "g" },
-      { "nom": "champignons de paris", "quantite": "250", "unite": "g" },
-      { "nom": "grana padano râpé", "quantite": "100", "unite": "g" },
-      { "nom": "épinards", "quantite": "250", "unite": "g" },
-      { "nom": "lait", "quantite": "100", "unite": "cL" },
-      { "nom": "farine t55", "quantite": "80", "unite": "g" },
-      { "nom": "beurre", "quantite": "80", "unite": "g" }
-    ]
-  },
-  "pates thai ananas": {
-    "nb_portions": 4,
-    "ingredients": [
-      { "nom": "ananas", "quantite": "0.5", "unite": "" },
-      { "nom": "vermicelles de riz", "quantite": "500", "unite": "g" },
-      { "nom": "champignons de paris", "quantite": "400", "unite": "g" },
-      { "nom": "blanc de poulet", "quantite": "250", "unite": "g" },
-      { "nom": "gousses d'ail", "quantite": "2", "unite": "" },
-      { "nom": "gingembre frais", "quantite": "2", "unite": "cm" },
-      {
-        "nom": "cube magique bouillon légumes",
-        "quantite": "0.5",
-        "unite": ""
-      },
-      { "nom": "lait de coco", "quantite": "40", "unite": "cL" },
-      { "nom": "cassonade", "quantite": "2", "unite": "cas" },
-      { "nom": "sauce nuoc nam", "quantite": "2", "unite": "cac" },
-      { "nom": "chili", "quantite": "1", "unite": "cac" }
-    ]
-  },
-  "pates carbonara": {
-    "nb_portions": 3,
-    "ingredients": [
-      { "nom": "pâtes linguine", "quantite": "500", "unite": "g" },
-      { "nom": "lardons", "quantite": "200", "unite": "g" },
-      { "nom": "grana padano râpé", "quantite": "100", "unite": "g" },
-      { "nom": "oeuf, jaune", "quantite": "3", "unite": "" },
-      { "nom": "huile d'olive", "quantite": "3", "unite": "cas" },
-      { "nom": "basilic frais", "quantite": "1", "unite": "" }
-    ]
-  },
-  "quiche lorraine": {
-    "nb_portions": 1,
-    "ingredients": [
-      { "nom": "pate brisée", "quantite": "1", "unite": "" },
-      { "nom": "lardons", "quantite": "200", "unite": "g" },
-      { "nom": "oeuf", "quantite": "3", "unite": "" },
-      { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
-      { "nom": "fromage râpé", "quantite": "70", "unite": "g" },
-      { "nom": "lait", "quantite": "25", "unite": "cL" },
-      { "nom": "sel", "quantite": "1", "unite": "g" },
-      { "nom": "poivre", "quantite": "1", "unite": "g" }
-    ]
-  },
-  "red lentil dahl": {
-    "nb_portions": 4,
-    "ingredients": [
-      { "nom": "huile de coco", "quantite": "2", "unite": "cas" },
-      { "nom": "oignons jaune", "quantite": "2", "unite": "" },
-      { "nom": "gousses d'ail", "quantite": "4", "unite": "" },
-      { "nom": "gingembre frais", "quantite": "2", "unite": "cm" },
-      { "nom": "poudre de poivron doux", "quantite": "1", "unite": "cac" },
-      { "nom": "garam masala", "quantite": "1", "unite": "cac" },
-      { "nom": "cumin", "quantite": "1", "unite": "cac" },
-      { "nom": "lentilles corail", "quantite": "300", "unite": "g" },
-      { "nom": "cube magique bouillon légumes", "quantite": "1", "unite": "" },
-      { "nom": "lait de coco", "quantite": "40", "unite": "cL" },
-      { "nom": "tomates concassées", "quantite": "400", "unite": "g" },
-      { "nom": "cassonade", "quantite": "2", "unite": "cas" },
-      { "nom": "citron vert", "quantite": "0.5", "unite": "" },
-      { "nom": "coriandre fraiche", "quantite": "1", "unite": "" },
-      { "nom": "riz", "quantite": "10", "unite": "g" }
-    ]
-  },
-  "gaspacho": {
-    "nb_portions": 4,
-    "ingredients": [
-      { "nom": "tomates allongées", "quantite": "1000", "unite": "g" },
-      { "nom": "concombres", "quantite": "0.5", "unite": "" },
-      { "nom": "oeuf", "quantite": "1", "unite": "" },
-      { "nom": "poivron rouge", "quantite": "1", "unite": "" },
-      { "nom": "oignons rouge", "quantite": "0.5", "unite": "" },
-      { "nom": "pain de mie", "quantite": "1", "unite": "" },
-      { "nom": "gousses d'ail", "quantite": "2", "unite": "" },
-      { "nom": "vinaigre de xérès", "quantite": "3", "unite": "cas" },
-      { "nom": "huile d'olive", "quantite": "2", "unite": "cas" }
-    ]
-  },
-  "salade cesar": {
-    "nb_portions": 2,
-    "ingredients": [
-      { "nom": "blanc de poulet", "quantite": "200", "unite": "g" },
-      { "nom": "lardons", "quantite": "200", "unite": "g" },
-      { "nom": "oeuf, jaune", "quantite": "1", "unite": "" },
-      { "nom": "salade laitue", "quantite": "1", "unite": "" },
-      { "nom": "filets d'anchois", "quantite": "5", "unite": "" },
-      { "nom": "tomates cerise", "quantite": "10", "unite": "" },
-      { "nom": "gousses d'ail", "quantite": "1", "unite": "" },
-      { "nom": "moutarde", "quantite": "1", "unite": "cac" },
-      { "nom": "jus de citron", "quantite": "2", "unite": "cas" },
-      { "nom": "huile d'olive", "quantite": "2", "unite": "cas" },
-      { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
-      { "nom": "croutons", "quantite": "1", "unite": "" },
-      { "nom": "parmesan copeaux", "quantite": "1", "unite": "" }
-    ]
-  },
-  "tarte chèvre tomate": {
-    "nb_portions": 1,
-    "ingredients": [
-      { "nom": "pate feuilletée", "quantite": "1", "unite": "" },
-      { "nom": "buche de chèvre", "quantite": "1", "unite": "" },
-      { "nom": "oeuf", "quantite": "3", "unite": "" },
-      { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
-      { "nom": "tomates rondes", "quantite": "3", "unite": "" },
-      { "nom": "moutarde à l'ancienne", "quantite": "3", "unite": "cas" },
-      { "nom": "semoule", "quantite": "10", "unite": "g" },
-      { "nom": "sel", "quantite": "1", "unite": "g" }
-    ]
-  },
-  "tarte poireaux lardons curry": {
-    "nb_portions": 1,
-    "ingredients": [
-      { "nom": "pate brisée", "quantite": "1", "unite": "" },
-      { "nom": "poireaux", "quantite": "2", "unite": "" },
-      { "nom": "oeuf", "quantite": "3", "unite": "" },
-      { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
-      { "nom": "lardons", "quantite": "100", "unite": "g" },
-      { "nom": "curry", "quantite": "2", "unite": "cac" },
-      { "nom": "sel", "quantite": "1", "unite": "g" }
-    ]
-  },
-  "tarte thon courgette": {
-    "nb_portions": 1,
-    "ingredients": [
-      { "nom": "pate feuilletée", "quantite": "1", "unite": "" },
-      { "nom": "courgette", "quantite": "2", "unite": "" },
-      { "nom": "oeuf", "quantite": "3", "unite": "" },
-      { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
-      { "nom": "mozzarella", "quantite": "1", "unite": "" },
-      { "nom": "thon", "quantite": "1", "unite": "boite" },
-      { "nom": "curry", "quantite": "2", "unite": "cas" },
-      { "nom": "sel", "quantite": "1", "unite": "g" }
-    ]
-  },
-  "pâte à pizza": {
-    "nb_portions": 4,
-    "ingredients": [
-      { "nom": "farine t00", "quantite": "450", "unite": "g" },
-      { "nom": "huile d'olive", "quantite": "3", "unite": "cas" },
-      { "nom": "sucre", "quantite": "20", "unite": "g" },
-      { "nom": "sel", "quantite": "1", "unite": "g" },
-      { "nom": "semola di granna duro", "quantite": "50", "unite": "g" }
-    ]
-  },
-  "pizza burratina": {
-    "nb_portions": 1,
-    "ingredients": [
-      { "nom": "coulis de tomate", "quantite": "100", "unite": "g" },
-      { "nom": "burrata", "quantite": "1", "unite": "" },
-      { "nom": "tomates cerise", "quantite": "10", "unite": "" },
-      { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
-      { "nom": "jampon cru", "quantite": "50", "unite": "g" }
-    ]
-  },
-  "pizza chêvre miel noix": {
-    "nb_portions": 1,
-    "ingredients": [
-      { "nom": "fromage de chêvre à tartiner", "quantite": "75", "unite": "g" },
-      { "nom": "miel liquide", "quantite": "2", "unite": "cas" },
-      { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
-      { "nom": "cernaux de noix", "quantite": "50", "unite": "g" }
-    ]
-  },
-  "pizza parmigianna": {
-    "nb_portions": 1,
-    "ingredients": [
-      { "nom": "coulis de tomate", "quantite": "100", "unite": "g" },
-      { "nom": "aubergine", "quantite": "0.5", "unite": "" },
-      { "nom": "huile d'olive", "quantite": "2", "unite": "cas" },
-      { "nom": "parmesan râpé", "quantite": "30", "unite": "g" },
-      { "nom": "parmesan copeaux", "quantite": "30", "unite": "g" }
-    ]
-  },
-  "salade italienne": {
-    "nb_portions": 8,
-    "ingredients": [
-      { "nom": "pâtes farfalle", "quantite": "500", "unite": "g" },
-      { "nom": "tomates séchées", "quantite": "300", "unite": "g" },
-      { "nom": "mini mozzarella", "quantite": "200", "unite": "g" },
-      { "nom": "tomates cerise", "quantite": "20", "unite": "" },
-      { "nom": "parmesan copeaux", "quantite": "1", "unite": "" },
-      { "nom": "salade roquette", "quantite": "200", "unite": "g" }
-    ]
-  },
-  "brownie": {
-    "nb_portions": 16,
-    "ingredients": [
-      { "nom": "chocolat noir", "quantite": "75", "unite": "g" },
-      { "nom": "pépites de chocolat noir", "quantite": "50", "unite": "g" },
-      { "nom": "farine t55", "quantite": "150", "unite": "g" },
-      { "nom": "cassonade", "quantite": "180", "unite": "g" },
-      { "nom": "beurre", "quantite": "150", "unite": "g" },
-      { "nom": "oeuf", "quantite": "2", "unite": "" },
-      { "nom": "levure chimique", "quantite": "1.5", "unite": "cac" },
-      { "nom": "noix", "quantite": "50", "unite": "g" },
-      { "nom": "sel", "quantite": "1", "unite": "g" }
-    ]
-  },
-  "crêpes": {
-    "nb_portions": 6,
-    "ingredients": [
-      { "nom": "farine t55", "quantite": "500", "unite": "g" },
-      { "nom": "lait", "quantite": "100", "unite": "cL" },
-      { "nom": "sucre vanillé", "quantite": "1", "unite": "sachet" },
-      { "nom": "huile de tournesol", "quantite": "2", "unite": "cas" },
-      { "nom": "oeuf", "quantite": "6", "unite": "" },
-      { "nom": "sel", "quantite": "1", "unite": "g" }
-    ]
-  },
-  "far breton": {
-    "nb_portions": 16,
-    "ingredients": [
-      { "nom": "lait", "quantite": "50", "unite": "cL" },
-      { "nom": "farine t55", "quantite": "100", "unite": "g" },
-      { "nom": "beurre", "quantite": "50", "unite": "g" },
-      { "nom": "oeuf", "quantite": "4", "unite": "" },
-      { "nom": "sucre", "quantite": "100", "unite": "g" },
-      { "nom": "pruneaux", "quantite": "200", "unite": "g" }
-    ]
-  },
-  "mousse au chocolat": {
-    "nb_portions": 4,
-    "ingredients": [
-      { "nom": "chocolat noir", "quantite": "50", "unite": "g" },
-      { "nom": "beurre", "quantite": "5", "unite": "g" },
-      { "nom": "oeuf, blanc", "quantite": "3", "unite": "" },
-      { "nom": "sel", "quantite": "1", "unite": "g" }
-    ]
-  },
-  "tarte au citron meringuée": {
-    "nb_portions": 8,
-    "ingredients": [
-      { "nom": "pate sablée", "quantite": "1", "unite": "" },
-      { "nom": "citron", "quantite": "4", "unite": "" },
-      { "nom": "sucre", "quantite": "150", "unite": "g" },
-      { "nom": "sucre glace", "quantite": "120", "unite": "g" },
-      { "nom": "beurre", "quantite": "120", "unite": "g" },
-      { "nom": "oeuf", "quantite": "3", "unite": "" },
-      { "nom": "oeuf, blanc", "quantite": "3", "unite": "" },
-      { "nom": "sel", "quantite": "1", "unite": "g" }
-    ]
+  "recettes_sucrées": {
+    "brownie": {
+      "nb_portions": 16,
+      "ingredients": [
+        { "nom": "chocolat noir", "quantite": "75", "unite": "g" },
+        { "nom": "pépites de chocolat noir", "quantite": "50", "unite": "g" },
+        { "nom": "farine t55", "quantite": "150", "unite": "g" },
+        { "nom": "cassonade", "quantite": "180", "unite": "g" },
+        { "nom": "beurre", "quantite": "150", "unite": "g" },
+        { "nom": "oeuf", "quantite": "2", "unite": "" },
+        { "nom": "levure chimique", "quantite": "1.5", "unite": "cac" },
+        { "nom": "noix", "quantite": "50", "unite": "g" },
+        { "nom": "sel", "quantite": "1", "unite": "g" }
+      ]
+    },
+    "crêpes": {
+      "nb_portions": 6,
+      "ingredients": [
+        { "nom": "farine t55", "quantite": "500", "unite": "g" },
+        { "nom": "lait", "quantite": "100", "unite": "cL" },
+        { "nom": "sucre vanillé", "quantite": "1", "unite": "sachet" },
+        { "nom": "huile de tournesol", "quantite": "2", "unite": "cas" },
+        { "nom": "oeuf", "quantite": "6", "unite": "" },
+        { "nom": "sel", "quantite": "1", "unite": "g" }
+      ]
+    },
+    "far breton": {
+      "nb_portions": 16,
+      "ingredients": [
+        { "nom": "lait", "quantite": "50", "unite": "cL" },
+        { "nom": "farine t55", "quantite": "100", "unite": "g" },
+        { "nom": "beurre", "quantite": "50", "unite": "g" },
+        { "nom": "oeuf", "quantite": "4", "unite": "" },
+        { "nom": "sucre", "quantite": "100", "unite": "g" },
+        { "nom": "pruneaux", "quantite": "200", "unite": "g" }
+      ]
+    },
+    "mousse au chocolat": {
+      "nb_portions": 4,
+      "ingredients": [
+        { "nom": "chocolat noir", "quantite": "50", "unite": "g" },
+        { "nom": "beurre", "quantite": "5", "unite": "g" },
+        { "nom": "oeuf, blanc", "quantite": "3", "unite": "" },
+        { "nom": "sel", "quantite": "1", "unite": "g" }
+      ]
+    },
+    "tarte au citron meringuée": {
+      "nb_portions": 8,
+      "ingredients": [
+        { "nom": "pate sablée", "quantite": "1", "unite": "" },
+        { "nom": "citron", "quantite": "4", "unite": "" },
+        { "nom": "sucre", "quantite": "150", "unite": "g" },
+        { "nom": "sucre glace", "quantite": "120", "unite": "g" },
+        { "nom": "beurre", "quantite": "120", "unite": "g" },
+        { "nom": "oeuf", "quantite": "3", "unite": "" },
+        { "nom": "oeuf, blanc", "quantite": "3", "unite": "" },
+        { "nom": "sel", "quantite": "1", "unite": "g" }
+      ]
+    }
   }
 }
