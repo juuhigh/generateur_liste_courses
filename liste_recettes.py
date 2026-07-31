@@ -1,18 +1,40 @@
 import json
 import subprocess
 import streamlit as st
+import requests
 
 
 def build_liste_courses_text(liste_courses, famille_ingredients):
     lignes = []
+    not_in_family = []
     for famille, ingredients in famille_ingredients.items():
         lignes.append(f"{famille.replace('_', ' ').capitalize()}:")
         for articles, [quantite, unite] in sorted(liste_courses.items()):
             if articles in ingredients:
                 lignes.append(f"- {articles}: {quantite} {unite}")
+            else:
+                not_in_family.append(f"- {articles}: {quantite} {unite}")
         lignes.append("")
-    return "\n".join(lignes).strip()
+    
+    liste_finale = lignes + not_in_family
+    return "\n".join(liste_finale).strip()
 
+# FILE_ID = "1m6tYhr7uXdt_-eowYhjBJlEz8f1rTnx2"
+# URL = f"https://drive.google.com/uc?export=download&id={FILE_ID}"
+# https://drive.google.com/file/d/1m6tYhr7uXdt_-eowYhjBJlEz8f1rTnx2/view?usp=drive_link
+
+# try:
+#     response = requests.get(URL)
+#     response.raise_for_status()
+
+#     st.success("Données récupérées avec succès depuis Google Drive.")
+# except requests.exceptions.RequestException as e:
+#     st.error(f"Erreur lors de la récupération des données : {e}")
+# except ValueError:
+#     st.error("Erreur lors de l'analyse des données JSON.")
+
+
+# dict_recettes = requests.get(URL).json()
 
 with open("recettes_cuisine.json", "r", encoding="utf-8") as f:
     dict_recettes = json.load(f)
