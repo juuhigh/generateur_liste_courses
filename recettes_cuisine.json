@@ -1,5 +1,5 @@
 {
-  "bolo do coooco": {
+  "bolo do caco": {
     "nb_portions": 4,
     "ingredients": [
       { "nom": "farine t65", "quantite": "500", "unite": "g" },
@@ -75,6 +75,7 @@
       { "nom": "lardons", "quantite": "200", "unite": "g" },
       { "nom": "oeuf", "quantite": "3", "unite": "" },
       { "nom": "crême fraiche", "quantite": "20", "unite": "cL" },
+      { "nom": "fromage râpé", "quantite": "70", "unite": "g" },
       { "nom": "lait", "quantite": "25", "unite": "cL" },
       { "nom": "sel", "quantite": "1", "unite": "g" },
       { "nom": "poivre", "quantite": "1", "unite": "g" }
