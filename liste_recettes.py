@@ -3,6 +3,10 @@ import subprocess
 import streamlit as st
 import requests
 
+st.set_page_config(
+    page_title="Courses",
+    page_icon="📊"
+)
 
 def build_liste_courses_text(liste_courses, famille_ingredients):
     lignes = []
